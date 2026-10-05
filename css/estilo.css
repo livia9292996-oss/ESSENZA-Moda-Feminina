@@ -1,6 +1,15 @@
 /* =========================
    ESTILIZAÇÃO - ESSENZA
+   Preto e dourado
    ========================= */
+
+:root {
+    --preto: #0d0d0d;
+    --grafite: #1a1a1a;
+    --dourado: #c9a24d;
+    --dourado-claro: #e6c987;
+    --texto: #e8e2d6;
+}
 
 * {
     margin: 0;
@@ -9,40 +18,50 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f5f2;
-    color: #333;
-    line-height: 1.6;
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: var(--preto);
+    color: var(--texto);
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Cabeçalho */
 
 header {
-    background-color: #2f2a2a;
-    color: white;
-    padding: 20px;
+    background-color: var(--grafite);
+    border-bottom: 2px solid var(--dourado);
+    padding: 25px 20px;
     text-align: center;
 }
 
 header h1 {
+    color: var(--dourado);
+    letter-spacing: 4px;
+    text-transform: uppercase;
     margin-bottom: 15px;
 }
 
 /* Menu */
 
 nav a {
-    color: white;
+    color: var(--texto);
     text-decoration: none;
-    margin: 0 10px;
-    padding: 8px 12px;
-    border-radius: 5px;
+    margin: 0 8px;
+    padding: 8px 14px;
+    border-radius: 4px;
+    letter-spacing: 1px;
     transition: 0.3s;
 }
 
 nav a:hover,
 nav a.active {
-    background-color: #c9a27e;
-    color: #2f2a2a;
+    background-color: var(--dourado);
+    color: var(--preto);
 }
 
 /* Conteúdo principal */
@@ -54,25 +73,71 @@ main {
 }
 
 section {
-    background-color: white;
+    background-color: var(--grafite);
+    border: 1px solid rgba(201, 162, 77, 0.25);
     padding: 30px;
     margin-bottom: 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
-    color: #2f2a2a;
+    color: var(--dourado);
     margin-bottom: 15px;
 }
 
 h3 {
-    color: #8b6b4a;
+    color: var(--dourado-claro);
     margin-bottom: 8px;
 }
 
 p {
     margin-bottom: 15px;
+}
+
+/* Destaque (imagem grande) */
+
+.hero img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    border: 1px solid var(--dourado);
+}
+
+/* Cartões dos destaques */
+
+.destaques {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.destaques h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+}
+
+.card {
+    background-color: var(--preto);
+    border: 1px solid rgba(201, 162, 77, 0.35);
+    border-radius: 8px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--dourado);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 12px;
 }
 
 /* Listas */
@@ -97,9 +162,17 @@ input,
 textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    background-color: var(--preto);
+    color: var(--texto);
+    border: 1px solid rgba(201, 162, 77, 0.5);
     border-radius: 5px;
     font-size: 16px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--dourado);
 }
 
 textarea {
@@ -108,26 +181,27 @@ textarea {
 }
 
 button {
-    background-color: #2f2a2a;
-    color: white;
+    background-color: var(--dourado);
+    color: var(--preto);
     border: none;
     padding: 12px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
 button:hover {
-    background-color: #c9a27e;
-    color: #2f2a2a;
+    background-color: var(--dourado-claro);
 }
 
 /* Rodapé */
 
 footer {
-    background-color: #2f2a2a;
-    color: white;
+    background-color: var(--grafite);
+    border-top: 2px solid var(--dourado);
+    color: var(--texto);
     text-align: center;
     padding: 20px;
     margin-top: 40px;
@@ -161,8 +235,13 @@ footer {
         padding: 20px;
     }
 
+    .hero img {
+        height: 220px;
+    }
+
     h1 {
-        font-size: 25px;
+        font-size: 24px;
+        letter-spacing: 2px;
     }
 
     h2 {
