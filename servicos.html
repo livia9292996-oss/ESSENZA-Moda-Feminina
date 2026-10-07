@@ -1,92 +1,512 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços - ESSENZA Moda e Beleza</title>
+
+    <title>Produtos — ESSENZA</title>
+
     <link rel="stylesheet" href="css/estilo.css">
+
 </head>
 
 <body>
 
-    <header>
-        <h1>ESSENZA Moda e Beleza</h1>
+<header>
 
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="servicos.html" class="active">Serviços</a>
-            <a href="contato.html">Contato</a>
+    <div class="header-inner">
+
+        <a class="brand" href="index.html">
+
+            <span class="brand-name">
+                ESSENZA
+            </span>
+
+            <span class="brand-sub">
+                Moda & Beleza
+            </span>
+
+        </a>
+
+
+        <nav aria-label="Navegação principal">
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="sobre.html">
+                Sobre
+            </a>
+
+            <a href="servicos.html" class="active">
+                Produtos
+            </a>
+
+            <a href="contato.html">
+                Contato
+            </a>
+
         </nav>
-    </header>
 
-    <main>
-        <section>
-            <h2>Nossos Produtos e Serviços</h2>
+    </div>
 
-            <p>
-                A ESSENZA oferece produtos e serviços de moda e beleza,
-                buscando atender diferentes estilos e ocasiões.
-            </p>
-        </section>
+</header>
 
-        <section class="destaques">
-            <h2>O que oferecemos</h2>
 
-            <div class="card">
-                <h3>Roupas Femininas</h3>
-                <p>
-                    Peças para diferentes ocasiões, incluindo vestidos,
-                    blusas, calças, saias e outras opções.
-                </p>
+<main>
+
+    <!-- INTRODUÇÃO -->
+
+    <section class="produtos-intro">
+
+        <span class="eyebrow rose">
+            Nossa coleção
+        </span>
+
+        <h1>
+            Produtos ESSENZA
+        </h1>
+
+        <p>
+            Encontre peças, acessórios e produtos de beleza
+            escolhidos para valorizar sua personalidade,
+            seu estilo e sua essência.
+        </p>
+
+    </section>
+
+
+    <!-- PRODUTOS -->
+
+    <section class="produtos">
+
+
+        <!-- PRODUTO 1 -->
+
+        <article class="produto-card">
+
+            <div class="produto-imagem">
+
+                <img
+                    src="img/vestido-elegance.png"
+                    alt="Vestido Elegance"
+                >
+
+                <span class="produto-categoria">
+                    Moda
+                </span>
+
             </div>
 
-            <div class="card">
-                <h3>Acessórios</h3>
-                <p>
-                    Acessórios para complementar os looks e valorizar
-                    diferentes estilos.
+
+            <div class="produto-info">
+
+                <h2>
+                    Vestido Elegance
+                </h2>
+
+                <p class="produto-descricao">
+                    Vestido feminino elegante,
+                    confortável e perfeito para
+                    ocasiões especiais.
                 </p>
+
+
+                <div class="produto-final">
+
+                    <strong>
+                        R$ 129,90
+                    </strong>
+
+                    <button
+                        class="btn-comprar"
+                        onclick="comprarProduto('Vestido Elegance', '129,90')"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
             </div>
 
-            <div class="card">
-                <h3>Maquiagem e Perfumaria</h3>
-                <p>
-                    Produtos de maquiagem e perfumes para completar
-                    o visual com elegância.
-                </p>
+        </article>
+
+
+        <!-- PRODUTO 2 -->
+
+        <article class="produto-card">
+
+            <div class="produto-imagem">
+
+                <img
+                    src="img/blusa-essenza.png"
+                    alt="Blusa Essenza"
+                >
+
+                <span class="produto-categoria">
+                    Moda
+                </span>
+
             </div>
 
-            <div class="card">
-                <h3>Cuidados com a Pele</h3>
-                <p>
-                    Opções de cuidados com a pele para o dia a dia,
-                    valorizando a beleza natural.
+
+            <div class="produto-info">
+
+                <h2>
+                    Blusa Essenza
+                </h2>
+
+                <p class="produto-descricao">
+                    Blusa delicada e versátil
+                    para criar diferentes
+                    combinações.
                 </p>
+
+
+                <div class="produto-final">
+
+                    <strong>
+                        R$ 89,90
+                    </strong>
+
+                    <button
+                        class="btn-comprar"
+                        onclick="comprarProduto('Blusa Essenza', '89,90')"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
             </div>
 
-            <div class="card">
-                <h3>Consultoria de Estilo</h3>
-                <p>
-                    Orientação para ajudar as clientes a escolher peças
-                    e produtos que combinem com seu estilo e ocasião.
-                </p>
+        </article>
+
+
+        <!-- PRODUTO 3 -->
+
+        <article class="produto-card">
+
+            <div class="produto-imagem">
+
+                <img
+                    src="img/kit-beleza.png"
+                    alt="Kit Beleza Essenza"
+                >
+
+                <span class="produto-categoria">
+                    Beleza
+                </span>
+
             </div>
 
-            <div class="card">
-                <h3>Atendimento Personalizado</h3>
-                <p>
-                    Atendimento dedicado para auxiliar na escolha dos produtos
-                    e proporcionar uma experiência de compra agradável.
+
+            <div class="produto-info">
+
+                <h2>
+                    Kit Beleza Essenza
+                </h2>
+
+                <p class="produto-descricao">
+                    Seleção especial de produtos
+                    para realçar sua beleza natural.
                 </p>
+
+
+                <div class="produto-final">
+
+                    <strong>
+                        R$ 79,90
+                    </strong>
+
+                    <button
+                        class="btn-comprar"
+                        onclick="comprarProduto('Kit Beleza Essenza', '79,90')"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
             </div>
-        </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 ESSENZA Moda e Beleza. Todos os direitos reservados.</p>
-    </footer>
+        </article>
 
-    <script src="js/script.js"></script>
+
+        <!-- PRODUTO 4 -->
+
+        <article class="produto-card">
+
+            <div class="produto-imagem">
+
+                <img
+                    src="img/batom-rose.png"
+                    alt="Batom Rosé"
+                >
+
+                <span class="produto-categoria">
+                    Beleza
+                </span>
+
+            </div>
+
+
+            <div class="produto-info">
+
+                <h2>
+                    Batom Rosé
+                </h2>
+
+                <p class="produto-descricao">
+                    Batom com acabamento sofisticado
+                    para completar sua produção.
+                </p>
+
+
+                <div class="produto-final">
+
+                    <strong>
+                        R$ 39,90
+                    </strong>
+
+                    <button
+                        class="btn-comprar"
+                        onclick="comprarProduto('Batom Rosé', '39,90')"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUTO 5 -->
+
+        <article class="produto-card">
+
+            <div class="produto-imagem">
+
+                <img
+                    src="img/bolsa-classic.png"
+                    alt="Bolsa Classic"
+                >
+
+                <span class="produto-categoria">
+                    Acessórios
+                </span>
+
+            </div>
+
+
+            <div class="produto-info">
+
+                <h2>
+                    Bolsa Classic
+                </h2>
+
+                <p class="produto-descricao">
+                    Bolsa elegante para acompanhar
+                    seus looks em diferentes ocasiões.
+                </p>
+
+
+                <div class="produto-final">
+
+                    <strong>
+                        R$ 159,90
+                    </strong>
+
+                    <button
+                        class="btn-comprar"
+                        onclick="comprarProduto('Bolsa Classic', '159,90')"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUTO 6 -->
+
+        <article class="produto-card">
+
+            <div class="produto-imagem">
+
+                <img
+                    src="img/colar-dourado.png"
+                    alt="Colar Dourado"
+                >
+
+                <span class="produto-categoria">
+                    Acessórios
+                </span>
+
+            </div>
+
+
+            <div class="produto-info">
+
+                <h2>
+                    Colar Dourado
+                </h2>
+
+                <p class="produto-descricao">
+                    Acessório delicado para adicionar
+                    um toque especial ao seu visual.
+                </p>
+
+
+                <div class="produto-final">
+
+                    <strong>
+                        R$ 59,90
+                    </strong>
+
+                    <button
+                        class="btn-comprar"
+                        onclick="comprarProduto('Colar Dourado', '59,90')"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUTO 7 -->
+
+        <article class="produto-card">
+
+            <div class="produto-imagem">
+
+                <img
+                    src="img/hidratante-facial.png"
+                    alt="Hidratante Facial"
+                >
+
+                <span class="produto-categoria">
+                    Skincare
+                </span>
+
+            </div>
+
+
+            <div class="produto-info">
+
+                <h2>
+                    Hidratante Facial
+                </h2>
+
+                <p class="produto-descricao">
+                    Hidratação diária para deixar
+                    a pele macia e bem cuidada.
+                </p>
+
+
+                <div class="produto-final">
+
+                    <strong>
+                        R$ 64,90
+                    </strong>
+
+                    <button
+                        class="btn-comprar"
+                        onclick="comprarProduto('Hidratante Facial', '64,90')"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUTO 8 -->
+
+        <article class="produto-card">
+
+            <div class="produto-imagem">
+
+                <img
+                    src="img/perfume-essenza.png"
+                    alt="Perfume Essenza"
+                >
+
+                <span class="produto-categoria">
+                    Perfumaria
+                </span>
+
+            </div>
+
+
+            <div class="produto-info">
+
+                <h2>
+                    Perfume Essenza
+                </h2>
+
+                <p class="produto-descricao">
+                    Fragrância feminina marcante,
+                    delicada e sofisticada.
+                </p>
+
+
+                <div class="produto-final">
+
+                    <strong>
+                        R$ 119,90
+                    </strong>
+
+                    <button
+                        class="btn-comprar"
+                        onclick="comprarProduto('Perfume Essenza', '119,90')"
+                    >
+                        Comprar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-brand">
+        ESSENZA
+    </div>
+
+    <p>
+        Moda & Beleza · © 2026 Todos os direitos reservados.
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
 </body>
+
 </html>

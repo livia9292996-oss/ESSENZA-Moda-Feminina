@@ -1,75 +1,185 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - ESSENZA Moda e Beleza</title>
-    <link rel="stylesheet" href="css/estilo.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contato — ESSENZA</title>
+
+<link rel="stylesheet" href="css/estilo.css">
+
+
 </head>
 
 <body>
 
-    <header>
-        <h1>ESSENZA Moda e Beleza</h1>
+<header>
 
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="servicos.html">Serviços</a>
-            <a href="contato.html" class="active">Contato</a>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h2>Entre em Contato</h2>
+<div class="header-inner">
 
-            <p>
-                Entre em contato com a ESSENZA Moda e Beleza para tirar
-                dúvidas, conhecer nossos produtos ou solicitar informações.
-            </p>
-        </section>
+    <a class="brand" href="index.html">
+        <span class="brand-name">ESSENZA</span>
+        <span class="brand-sub">Moda & Beleza</span>
+    </a>
 
-        <section>
-            <h2>Fale Conosco</h2>
+    <nav>
 
-            <form id="form-contato" novalidate></form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html" class="active">Contato</a>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+    </nav>
 
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+</div>
 
-                <button type="submit">Enviar mensagem</button>
-            </form>
 
-            <p id="retorno"></p>
-        </section>
+</header>
 
-        <section>
-            <h2>Informações da Empresa</h2>
+<main>
 
-            <p>
-                <strong>Endereço:</strong> Rua Principal, 100 - Centro
-            </p>
+<section class="page-card">
 
-            <p>
-                <strong>Telefone:</strong> (33) 99999-9999
-            </p>
+    <span class="eyebrow rose">
+        Vamos conversar
+    </span>
 
-            <p>
-                <strong>E-mail:</strong> contato@essenzamodafeminina.com
-            </p>
-        </section>
-    </main>
+    <h2>
+        Fale com a ESSENZA.
+    </h2>
 
-    <footer>
-        <p>&copy; 2026 ESSENZA Moda e Beleza. Todos os direitos reservados.</p>
-    </footer>
+    <p>
+        Tem dúvidas, quer conhecer nossos produtos
+        ou precisa de ajuda para escolher?
+        Envie uma mensagem.
+    </p>
 
-    <script src="js/script.js"></script>
+
+    <form id="form-contato" novalidate>
+
+        <label for="nome">
+            Nome
+        </label>
+
+        <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Seu nome"
+            required
+        >
+
+
+        <label for="email">
+            E-mail
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seuemail@exemplo.com"
+            required
+        >
+
+
+        <label for="mensagem">
+            Mensagem
+        </label>
+
+        <textarea
+            id="mensagem"
+            name="mensagem"
+            placeholder="Como podemos ajudar?"
+            required
+        ></textarea>
+
+
+        <button type="submit">
+            Enviar mensagem
+        </button>
+
+    </form>
+
+
+    <p id="retorno" aria-live="polite"></p>
+
+</section>
+
+
+<section class="page-card">
+
+    <h2>
+        Informações
+    </h2>
+
+
+    <div class="info-grid">
+
+        <div class="info">
+
+            <strong>
+                Endereço
+            </strong>
+
+            <span>
+                Rua Principal, 100 — Centro
+            </span>
+
+        </div>
+
+
+        <div class="info">
+
+            <strong>
+                Telefone
+            </strong>
+
+            <span>
+                (33) 99999-9999
+            </span>
+
+        </div>
+
+
+        <div class="info">
+
+            <strong>
+                E-mail
+            </strong>
+
+            <span>
+                contato@essenzamodafeminina.com
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+<footer>
+
+
+<div class="footer-brand">
+    ESSENZA
+</div>
+
+<p>
+    Moda & Beleza · © 2026 Todos os direitos reservados.
+</p>
+
+
+</footer>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>
